@@ -61,3 +61,8 @@ streamlit run app.py
 3. The user interface and deployment of the application are handled through Streamlit.
 4. Users have the flexibility to choose from several LLaMA2 chat API endpoints, including the base LLaMA2, finetuned LLaMA2, base with RAG, and finetuned with RAG.
 5. Each version of the model (base, finetuned, with and without RAG) is hosted on Replicate.
+
+### References
+- [Fine-Tuning LLaMA 2: A Step-by-Step Guide to Customizing the Large Language Model](https://www.datacamp.com/tutorial/fine-tuning-llama-2)
+- [Building a RAG application from scratch using Python, LangChain, and the OpenAI API](https://www.youtube.com/watch?v=BrsocJb-fAo&t=3685s)
+- [Deploy with Streamlit: Secrets management](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/secrets-management)

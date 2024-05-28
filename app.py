@@ -57,17 +57,6 @@ for message in st.session_state.messages:
 def generate_llama2_response(prompt_input):
     string_dialogue = "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'."
     
-    
-    # below is for session messages history; we disabled this feature here for test run
-    # for dict_message in st.session_state.messages:
-    #    if dict_message["role"] == "user":
-    #        string_dialogue += "User: " + dict_message["content"] + "\n\n"
-    #    else:
-    #        string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
-    
-    
-    # run selected model
-    # 'LLaMA2', 'Finetuned LLaMA2', 'LLaMA2 with RAG', 'Finetuned LLaMA2 with RAG'
     output = ""
     if selected_option == 'Finetuned LLaMA2 with RAG':
         output = query_finetuned_rag(f"{string_dialogue} {prompt_input} Assistant: ")
